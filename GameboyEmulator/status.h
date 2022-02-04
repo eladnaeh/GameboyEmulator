@@ -1,0 +1,24 @@
+#pragma once
+
+typedef enum Status {
+	SUCCESS = 0,
+
+	NOT_INITIALIZED_ERROR = -1,
+
+	//Memory Access
+	ACCESSED_PROHIBITED_MEMORY = -2,
+
+	//Command Line Arguments
+	INCORRECT_AMOUNT_OF_CLI_ARGUMENTS_GIVEN = -3,
+
+	//ROM
+	OPENING_GAMEFILE_ERROR = -4,
+	READING_CART_FAILURE = -5,
+
+	UNSUPPORTED_GAMEBOY_TYPE = -6,
+	UNSUPPORTED_CART_TYPE = -7,
+
+	//Interrupts
+	INTERRUPT_NOT_FOUND_ERROR = -8,
+
+}status;
